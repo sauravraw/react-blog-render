@@ -1,0 +1,27 @@
+.headerDiv {
+	height: 50px;
+	border: 1px solid black;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100vw;
+}
+
+.headerNavbar {
+	width: 30%;
+	float: right;
+	list-style: none;
+}
+.headerLink {
+	padding: 0 10px;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+.headerLink:hover {
+	color: aqua;
+	text-decoration: underline;
+	font-size: 20px;
+	padding: 0 15px;
+}
