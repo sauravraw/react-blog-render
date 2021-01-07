@@ -11,6 +11,9 @@ export default class Router extends Component {
 			<>
 				<BrowserRouter>
 					<Header />
+					<Switch>
+						<Route path="/" exact component={Blog} />
+					</Switch>
 					<Blog />
 					<Footer />
 				</BrowserRouter>
