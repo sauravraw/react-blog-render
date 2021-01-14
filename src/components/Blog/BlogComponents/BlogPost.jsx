@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import style from "./BlogPost.module.css";
+import { Link } from "react-router-dom";
 
 export default class BlogPost extends Component {
 	state = {
@@ -14,7 +15,9 @@ export default class BlogPost extends Component {
 					alt={post.author}
 					className={style["blog-image"]}
 				/>
-				<p className={style["blog-header"]}>{post.author}</p>
+				<Link to={"/blogs/" + post.id}>
+					<p className={style["blog-header"]}>{post.author}</p>
+				</Link>
 			</div>
 		);
 	}
