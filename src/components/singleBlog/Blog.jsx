@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/Blog.module.css";
+import styles from "./singleBlog.module.css";
 
 class Blog extends Component {
 	render() {
@@ -14,9 +14,9 @@ class Blog extends Component {
 							return (
 								<div key={`${link.id} ${i}`}>
 									<Link
-										className={styles["related-link-list"]}
 										to={`/blogs/${link.id}`}
 										onClick={() => this.props.blogById(link.id)}
+										className={styles["related-link-list"]}
 									>
 										<p>{link.title}</p>
 									</Link>

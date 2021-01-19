@@ -32,6 +32,11 @@
 .blog-title {
 	margin-top: 10px;
 	margin-left: 300px;
+	z-index: 999;
+}
+.blog-section .blog-title {
+	width: 100%;
+	text-decoration: none;
 }
 .blog-author {
 	margin-top: 10px;
@@ -104,7 +109,8 @@ p {
 /* Mobile view */
 @media (max-width: 530px) {
 	.blog-title {
-		margin-left: 23px;
+		margin: auto;
+		width: 70%;
 		font-size: 23px;
 	}
 	.blog-author {

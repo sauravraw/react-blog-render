@@ -1,7 +1,6 @@
 .headerDiv {
 	height: 40px;
-	border: 1px solid black;
-	background-color: black;
+	background-color: #333;
 	position: fixed;
 	top: 0;
 	z-index: 999;
@@ -14,7 +13,7 @@
 }
 .headerNavbar {
 	margin-top: -25px;
-	width: 40%;
+	width: 30%;
 	float: right;
 	list-style: none;
 }

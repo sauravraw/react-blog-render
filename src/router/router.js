@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //pages
 import Blogs from "../components/Blogs/Blogs";
-import DisplayBlog from "../pages/DisplayBlog";
-import PageNotFound from "../pages/404NotFoundPg";
+import singleBlog from "../components/singleBlog/singleBlog";
+import ErrorPage from "../components/404Error/404Error";
 //components
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
@@ -18,8 +18,8 @@ class Router extends Component {
 					<Switch>
 						<Route path="/react-blog-render" exact component={Blogs} />
 						<Route path="/" exact component={Blogs} />
-						<Route path="/blogs/:id" exact component={DisplayBlog} />
-						<Route component={PageNotFound} />
+						<Route path="/blogs/:id" exact component={singleBlog} />
+						<Route component={ErrorPage} />
 					</Switch>
 					<Footer />
 				</BrowserRouter>

@@ -1,11 +1,11 @@
 import { Component } from "react";
-import url from "../components/ApiCall";
-import Blog from "../components/Blog.jsx";
-import BlogStyles from "../styles/Blog.module.css";
-import PageNotFound from "../pages/404NotFoundPg";
+import url from "../ApiCall";
+import Blog from "./Blog.jsx";
+import BlogStyles from "./singleBlog.module.css";
+import ErrorPage from "../404Error/404Error";
 
 //class component to display blogById
-export default class DisplayBlog extends Component {
+export default class singleBlog extends Component {
 	state = {
 		blog: [],
 		status: "",
@@ -62,7 +62,7 @@ export default class DisplayBlog extends Component {
 						{...this.props}
 					/>
 				) : (
-					<PageNotFound />
+					<ErrorPage />
 				)}
 			</div>
 		);
