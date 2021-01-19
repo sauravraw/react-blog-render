@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* main start */
+.blog-main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.blog-main .blog-section {
+	margin-top: 70px;
+	width: 75%;
+	margin-right: 330px;
+}
+
+.blog-image img {
+	margin: 20px 0 0 180px;
+	border-radius: 5% 5%;
+	height: 60%;
+	width: 60%;
+}
+.blog-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 0 0 30px;
+}
+.blog-title {
+	margin-top: 10px;
+	margin-left: 300px;
+}
+.blog-author {
+	margin-top: 10px;
+	margin-left: 300px;
+}
+.blog-content {
+	margin-top: 50px;
+	text-align: justify;
+}
+.blog-author {
+	margin-left: 400px;
+}
+h1 {
+	margin-top: 10px;
+	margin-left: 300px;
+	font-size: 25px;
+	font-weight: bolder;
+}
+h1:hover {
+	text-decoration: underline;
+}
+p {
+	margin-right: 100px;
+}
+
+/* aside  */
+
+.aside-link {
+	margin-top: 35vh;
+	width: 27%;
+	position: fixed;
+}
+.aside-h2 {
+	font-size: 23px;
+}
+.aside-h2:hover {
+	text-decoration: underline;
+}
+.related-link-list {
+	color: black;
+}
+.related-link-list:hover {
+	color: red;
+}
+
+/* tablet view start */
+
+@media (max-width: 768px) {
+	.blog-title {
+		margin-left: 100px;
+	}
+	.blog-main .blog-section {
+		margin-top: 70px;
+		width: 88%;
+		margin-right: 210px;
+	}
+	.blog-author {
+		margin-left: 200px;
+	}
+	.blog-image img {
+		margin: 20px 70px;
+	}
+	aside {
+		padding: 0 0 0 73vw;
+	}
+}
+
+/* tablet view end */
+
+/* Mobile view */
+@media (max-width: 530px) {
+	.blog-title {
+		margin-left: 23px;
+		font-size: 23px;
+	}
+	.blog-author {
+		margin-left: 120px;
+	}
+	.blog-content {
+		margin-left: -10px;
+	}
+	.blog-main {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.blog-main .blog-section {
+		width: 100%;
+		margin: 60px 0 0 0;
+	}
+	.blog-image img {
+		width: 80%;
+		height: 80%;
+		margin: 10px 0 0 10vw;
+	}
+	.blog-content h1 {
+		width: 90%;
+	}
+	p {
+		font-size: 17px;
+		width: 90%;
+		text-align: justify;
+	}
+	aside {
+		padding: 0;
+		width: 80%;
+	}
+	.aside-link {
+		width: 100%;
+		margin-top: 5vh;
+		position: relative;
+	}
+	.aside-h2 {
+		width: 100%;
+	}
+	.related-link-list {
+		padding: 0 0 0 100px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 320px) {
+	.blog-author {
+		margin-left: 100px;
+	}
+}

@@ -3,7 +3,7 @@ import style from "./Footer.module.css";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-class Footer extends Component {
+export default class Footer extends Component {
 	render() {
 		return (
 			<>
@@ -38,5 +38,3 @@ class Footer extends Component {
 		);
 	}
 }
-
-export default Footer;
