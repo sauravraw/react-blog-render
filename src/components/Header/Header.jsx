@@ -24,12 +24,14 @@ export default class Nav extends Component {
 					</Link>
 					<a
 						href="https://sauravraw.github.io/portfolio/"
+						target="_new"
 						className={style["headerLink"]}
 					>
 						PortFolio
 					</a>
 					<a
 						href="https://login-page-react.sauravraw.vercel.app/"
+						target="_new"
 						className={style["headerLink"]}
 					>
 						Login
