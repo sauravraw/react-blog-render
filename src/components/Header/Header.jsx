@@ -22,18 +22,18 @@ export default class Nav extends Component {
 					<Link to="/" className={style["headerLink"]}>
 						Home
 					</Link>
-					<Link
-						to="https://sauravraw.github.io/portfolio/"
+					<a
+						href="https://sauravraw.github.io/portfolio/"
 						className={style["headerLink"]}
 					>
 						PortFolio
-					</Link>
-					<Link
-						to="https://login-page-react.sauravraw.vercel.app/"
+					</a>
+					<a
+						href="https://login-page-react.sauravraw.vercel.app/"
 						className={style["headerLink"]}
 					>
 						Login
-					</Link>
+					</a>
 				</p>
 				<GoThreeBars className={style["headerHumberger"]} />
 			</div>
