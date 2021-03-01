@@ -1,64 +1,64 @@
 .headerDiv {
-	height: 40px;
-	background-color: #333;
-	position: fixed;
-	top: 0;
-	z-index: 999;
-	width: 100vw;
+  height: 40px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100vw;
 }
 .headerLogo {
-	margin-left: 20px;
-	width: 50px;
-	height: 30px;
+  margin-left: 20px;
+  width: 50px;
+  height: 30px;
 }
 .headerNavbar {
-	margin-top: -25px;
-	width: 30%;
-	float: right;
-	list-style: none;
+  margin-top: -25px;
+  width: 30%;
+  float: right;
+  list-style: none;
 }
 .headerLink {
-	padding: 0 10px;
-	font-size: 15px;
-	color: white;
-	text-decoration: none;
+  padding: 0 10px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
 }
 .headerLink:hover {
-	color: aqua;
-	text-decoration: underline;
+  color: aqua;
+  text-decoration: underline;
 }
 
 .headerHumberger {
-	color: white;
-	display: none;
+  color: white;
+  display: none;
 }
 
 /* tablet view */
 @media (max-width: 768px) {
-	.headerLogo {
-		margin-top: 10px;
-		margin-left: 20px;
-	}
-	.headerNavbar {
-		margin-top: -20px;
-		width: 40%;
-		float: right;
-		list-style: none;
-	}
+  .headerLogo {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .headerNavbar {
+    margin-top: -20px;
+    width: 40%;
+    float: right;
+    list-style: none;
+  }
 }
 /* Mobile view */
 @media (max-width: 530px) {
-	.headerLogo {
-		width: 20px;
-		height: 20px;
-	}
-	.headerHumberger {
-		margin-top: -20px;
-		margin-right: 40px;
-		float: right;
-		display: block;
-	}
-	.headerLink {
-		display: none;
-	}
+  .headerLogo {
+    width: 20px;
+    height: 20px;
+  }
+  .headerHumberger {
+    margin-top: -20px;
+    margin-right: 40px;
+    float: right;
+    display: block;
+  }
+  .headerLink {
+    display: none;
+  }
 }
